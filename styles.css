@@ -1,50 +1,80 @@
-/* Main CSS */
-*{
+/* Header title */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-body{
-  color: #797979;
-  background: #fffff;
-  font-family: 'Open Sans', sans-serif;
-
+h1 {
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 
-
-
-/* hyperlinks */
-a{
-    color: #454545;
-    transition: .3s;
-}
-/* Top bar header container */
-.header { 
-    padding:20px;
+.header {
+    margin: 2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #1d2434;
-    color: #1d2434;
+    padding-bottom: 10px;
+
 }
-/* Header 1 */
-h1{
-    color: #1d2434;
+.menu {
+    position: relative;
+    bottom: 10px;
+    float: left;
+}
+/* Stick nav bar */
+#navbar{
+    overflow: hidden;
+    background-color: #1d2434;
+}
+#navbar a{
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.content{
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
 }
 
-
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 2%;
-    left: 25%;
+/* unvisited link */
+a:link{ 
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+/* mouse over */
+a:hover{
+    color: tan;
+    background-color: #1d2434;
+    text-decoration: underline;
 }
 
-.top-bar{
-        position: relative;
-        height: 60px;
-        background: #1d2434;
+a:active{
+    color: steelblue;
+    text-decoration: underline;
 }
+
+a:visited{
+    color:white;
+    text-decoration: underline;
+}
+/* Media Query */
+@media screen and (max-width:768px) {
+    menu, 
+    h1 {
+        flex-direction: column;
+    }
