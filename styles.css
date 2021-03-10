@@ -79,24 +79,36 @@ a:visited{
         flex-direction: column;
     }
 
-.photo img{ 
+.photo-pos{
+        display: flex;
+        margin-top: 2%;
+}
+
+.photo{ 
         border: 1px solid #ddd;
-        position: relative;
-        left: 40%;
-        border-radius: 4px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
         padding: 5px;
         width: 150px;
       }
       
-      img:hover {
+      .photo:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
       }
-}
 
-}
-
-@media (max-width: 767.98px){
-.photo.before
-    margin-bottom: 30px;
-    height: auto;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #1d2434;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
 }
