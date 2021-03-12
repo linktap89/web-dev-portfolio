@@ -68,13 +68,17 @@ a:hover {
     opacity: 60%;
 }
 
-a:active {
-    text-shadow: skyblue;
-}
-
 a:visited {
     color: white;
     text-decoration: underline;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
 }
 
 
@@ -128,8 +132,8 @@ a:visited {
         opacity: 0.5;
     }
     /**************************
--------Grid Container------
-**************************/
+    ------Grid Container------
+    *************************/
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -142,19 +146,6 @@ a:visited {
         padding: 10px;
         font-size: 30px;
     }
-    .content {
-        color: white;
-        position: relative;
-        text-align: left;
-        font-weight: 60;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        font-family: Arial, Helvetica, sans-serif;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
     .content.normal {
         font-weight: normal;
         @media (max-width: 767.98px) {
@@ -162,4 +153,29 @@ a:visited {
             height: auto;
         }
     }
+}
+
+.content {
+    color: white;
+    position: relative;
+    font-weight: 60;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.content #work {
+    color: white;
+    position: relative;
+    padding-top: 3px;
+    font-weight: 60;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
