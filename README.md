@@ -10,7 +10,7 @@ linktap
 
 https://github.com/linktap89/web-dev-portfolio
 
-<img src="website.thumb.png" alt"website screenshot">
+![Website](website.thumb.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
