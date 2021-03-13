@@ -23,7 +23,15 @@
     .sub-titles {
         position: relative;
         top: 10px;
-        display: flexbox;
+        display: flex;
+        flex-direction: column;
+        color: #f0ad3a;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .sub-titles-contact {
+        position: absolute;
+        top: 3000px;
         color: #f0ad3a;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
@@ -207,4 +215,12 @@
         transform: rotate(0deg);
         box-shadow: 10px 10px 5px #aaaaaa;
         margin: 20px;
+    }
+    
+    .copy {
+        color: white;
+        justify-content: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        opacity: 20%;
     }
